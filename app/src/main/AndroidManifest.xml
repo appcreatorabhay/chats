@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Chats"
+        tools:overrideLibrary="com.google.firebase.analytics.ktx"
+        tools:targetApi="31">
+        <activity
+            android:name=".chatActivity"
+            android:exported="false" />
+        <!-- Add Firebase authentication meta-data -->
+        <meta-data
+            android:name="com.google.firebase.auth.API_KEY"
+            android:value=" AIzaSyCDM1gM4XuwJfhF6vvFV7aitdTOKFqctPo" />
+        <meta-data
+            android:name="com.google.firebase.auth.APPLICATION_ID"
+            android:value="1:360252799800:android:2397edb9e443be75a0dfcd" />
+
+        <activity android:name=".Signup"></activity>
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"></activity>
+    </application>
+
+</manifest>

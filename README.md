@@ -1,2 +1,2 @@
-# chats
-for chatting  purpose like a whatsapp
+# chatting_app
+ for chatting pupose like a whatsapp
